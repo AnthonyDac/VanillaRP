@@ -21,7 +21,7 @@ body {
 }
 .demo img {
   width: 100%;
-  height: 430px;
+  height: 525px;
   object-fit: cover;
 }
 .demo .demo-inner {
@@ -187,7 +187,7 @@ body {
 }
 .guide .guideContainer img {
   width: 100%;
-  height: 430px;
+  height: 525px;
   object-fit: cover;
 }
 .guide .guideContainer .guideContainerInner {
