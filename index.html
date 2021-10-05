@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/fe0dc174bc.js" crossorigin="anonymous"></script>
+    <title>ValhallaRP - Accueil</title>
+</head>
+<body>
+    <main>
+        <section class="demo">
+            <img src="public/img/sa-mp-015.png">
+            <div class="demo-inner">
+                <h1>Vanilla Roleplay</h1>
+                <p>Serveur Roleplay SA:MP</p>
+            </div>
+            <div class="demo-inner2">
+                <a>Se connecter</a>
+                <a>S'inscrire</a>
+            </div>
+        </section>
+        <nav>
+            <div class="nav-bar">
+                <div class="nav-bar-container">
+                    <div class="nav-btn">
+                        <a href="">Actualités</a>
+                        <div class="nav-btn-slider"></div>
+                    </div>
+                    <div class="nav-btn">
+                        <a href="">Règles</a>
+                        <div class="nav-btn-slider"></div>
+                    </div>
+                    <div class="nav-btn">
+                        <a href="">Nouveautés</a>
+                        <div class="nav-btn-slider"></div>
+                    </div>
+                    <div class="nav-btn">
+                        <a href="">Notre politique</a>
+                        <div class="nav-btn-slider"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="mainContainer">
+            <div class="globalContainer">
+                <div class="card">
+                    <div class="icons">
+                        <div class="icons-inner">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <h1>Script</h1>
+                    <p>Notre script permet une adaptation permanente à ce qui se déroule IC. Nous avons pris la décision d'établir la possibilité d'agir sur le script global directement en jeu.</p> 
+                </div>
+                <div class="card">
+                    <div class="icons">
+                        <div class="icons-inner">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                    </div>
+                    <h1>Economie stable</h1>
+                    <p>Pour ne pas troubler l'économie IC du serveur, chaque $ revient obligatoirement à un job, une faction ou un joueur.</p> 
+                </div>
+                <div class="card">
+                    <div class="icons">
+                        <div class="icons-inner">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <h1>Innovation</h1>
+                    <p>Vous avez à votre disposition tout le nécessaire pour pratiquer tous les RP, même ceux basés sur le lifestyle, luxe, le corporate, famillial, carcéral, nomade etc..</p> 
+                </div>
+            </div>
+        </section>
+        <section class="guide">
+            <div class="guideContainer">
+                <img src="public/img/6.png">
+                <div class="guideContainerInner">
+                    <h1>Notre guide pour rejoindre le serveur</h1>
+                </div>
+                <div class="guideContainerInnerCells">
+                    <div class="guideContainerInnerCards">
+                        <i class="fas fa-file-download"></i>
+                        <h2>Installation du jeu</h2>
+                        <p>Tout ce qu'il vous faut pour partir de rien et rejoindre le serveur.</p>
+                        <button>Ouvrir</button>
+                        <br>
+                        <br>
+                        <a href="">(Télécharger les packages du serveur)</a> 
+                    </div>
+                    <div class="guideContainerInnerCards">
+                        <i class="fab fa-leanpub"></i>
+                        <h2>Apprendre le RP</h2>
+                        <p>Un guide entier sur chaque partie que le RP implique.</p>
+                        <button>Ouvrir</button>
+                        <br>
+                        <br>
+                        <a id="invisible">(</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="containerFooter">
+            
+        </div>
+    </footer>
+</body>
+<script>
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+</html>

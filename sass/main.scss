@@ -1,0 +1,279 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$main-police: 'Montserrat';
+$background-color: #EAEAEA;
+$paragraph-color: #353535;
+$surligner-and-background-animations: #99E2D0;
+$alternative-background: #F6F6F6;
+$background-listers: #FFFFFF;
+$background-button: linear-gradient(180deg, $secondary-color 0%, $primary-color 100%);
+$reverse-background-button: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
+$softshadowing: 0 0 8px 0 rgba(0,0,0,0.2);
+$middleshadowing: 1px 10px 18px 0px rgba(0,0,0,0.25);
+$buttonshadowing: 1px 10px 18px 0px rgba(255,255,255,0.15);
+$longueurImages: 500px;
+
+html 
+{
+  scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+}
+body
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    height: auto;
+    width: 100%;
+}
+.demo
+{
+    position: relative;
+    width: 100%;
+    img {
+        width: 100%;
+        height: $longueurImages;
+        object-fit: cover;
+    }
+    .demo-inner {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        h1 {
+            font-family: 'Chivo';
+            font-weight: bold;
+            color: dodgerblue;
+        }
+        p {
+            font-family: 'Montserrat';
+        }
+    }
+    .demo-inner2 {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        color: white;
+        font-size: 18px;
+        a {
+            font-family: 'Montserrat';
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: inset $buttonshadowing;
+            transition-duration: 0.7s;
+            &:first-child {
+                margin-right: 5px;
+            }
+            &:hover {
+                background: $alternative-background;
+                cursor: pointer;
+                color: $paragraph-color;
+                transition-duration: 0.7s;
+            }
+        }
+    }
+}
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background: $alternative-background;
+    margin-top: -5px;
+    box-shadow: $softshadowing;
+    .nav-bar-container {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        .nav-btn {
+            position: relative;
+            width: 25%;
+            padding: 20px 0;
+            transition-duration: 1s;
+            z-index: 0;
+            a {
+                width: 100%;
+                color: black;
+                text-decoration: none;
+                font-family: 'Montserrat';
+                z-index: 2;
+            }
+            &:hover .nav-btn-slider {
+                cursor: pointer;
+                width: 100%;
+            }
+            .nav-btn-slider {
+                position: absolute;
+                width: 0%;
+                height: 100%;
+                background: dodgerblue;
+                opacity: 0.1;
+                top: 0%;
+                z-index: -1;
+                transition: width 0.7s ease;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.mainContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #2b2f36;
+    .globalContainer {
+        width: 75%;
+        display: flex;
+        flex-flow: wrap row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 75px 0;
+        .card {
+            max-width: 27.5%;
+            height: 240px;
+            color: white;
+            position: relative;
+            .icons {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icons-inner
+                {
+                    background-color: white;
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i {
+                        font-size: 30px;
+                        color: dodgerblue;
+                    }
+                }
+            }
+            h1 {
+                font-family: 'Chivo';
+                margin-top: 15px;
+                font-size: 24px;
+            }
+            p {
+                font-family: 'Montserrat';
+                margin-top: 5px;
+                font-size: 15px;
+            }
+            &:nth-child(4) {
+                width: 47%;
+            }
+            &:nth-child(5) {
+                width: 47%;
+            }
+        }
+    }
+}
+.guide {
+    width: 100%;
+    .guideContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: $alternative-background;
+        img {
+            width: 100%;
+            height: $longueurImages;
+            object-fit: cover;
+        }
+        .guideContainerInner {
+            width: 75%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            h1 {
+                color: $paragraph-color;
+                font-family: 'Montserrat';
+                font-weight: 100;
+                padding: 10px 0;
+            }
+        }
+        .guideContainerInnerCells {
+            width: 75%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            padding: 40px 0;
+            .guideContainerInnerCards {
+                 width: 45%;
+                i {
+                    font-size: 40px;
+                    color: $paragraph-color;
+                }
+                h2 {
+                    color: $paragraph-color;
+                    font-family: 'Chivo';
+                    font-weight: 100;
+                    padding: 10px 0;
+                }
+                p {
+                    color: $paragraph-color;
+                    font-family: 'Montserrat';
+                    font-weight: 100;
+                    padding: 10px 0;
+                    margin-top: -5px;
+                }
+                button {
+                    border: none;
+                    background: dodgerblue;
+                    color: white;
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    border-radius: 15px;
+                    margin-top: 5px;
+                    transition-duration: 0.7s;
+                    border: 2px solid transparent;
+                    &:hover {
+                        background: $alternative-background;
+                        cursor: pointer;
+                        color: $paragraph-color;
+                        transition-duration: 0.7s;
+                        border: 2px solid $paragraph-color;
+                    }
+                }
+                a {
+                    margin-top: 15px;
+                    color: black;
+                    font-family: 'Chivo';
+                    transition-duration: 0.5s;
+                    &:hover {
+                        color: dodgerblue;
+                        transition-duration: 0.5s;
+                    }
+                }
+                #invisible {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

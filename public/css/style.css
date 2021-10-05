@@ -1,0 +1,266 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+.demo {
+  position: relative;
+  width: 100%;
+}
+.demo img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.demo .demo-inner {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.demo .demo-inner h1 {
+  font-family: "Chivo";
+  font-weight: bold;
+  color: dodgerblue;
+}
+.demo .demo-inner p {
+  font-family: "Montserrat";
+}
+.demo .demo-inner2 {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  color: white;
+  font-size: 18px;
+}
+.demo .demo-inner2 a {
+  font-family: "Montserrat";
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: inset 1px 10px 18px 0px rgba(255, 255, 255, 0.15);
+  transition-duration: 0.7s;
+}
+.demo .demo-inner2 a:first-child {
+  margin-right: 5px;
+}
+.demo .demo-inner2 a:hover {
+  background: #F6F6F6;
+  cursor: pointer;
+  color: #353535;
+  transition-duration: 0.7s;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background: #F6F6F6;
+  margin-top: -5px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.nav-bar .nav-bar-container {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.nav-bar .nav-bar-container .nav-btn {
+  position: relative;
+  width: 25%;
+  padding: 20px 0;
+  transition-duration: 1s;
+  z-index: 0;
+}
+.nav-bar .nav-bar-container .nav-btn a {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat";
+  z-index: 2;
+}
+.nav-bar .nav-bar-container .nav-btn:hover .nav-btn-slider {
+  cursor: pointer;
+  width: 100%;
+}
+.nav-bar .nav-bar-container .nav-btn .nav-btn-slider {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: dodgerblue;
+  opacity: 0.1;
+  top: 0%;
+  z-index: -1;
+  transition: width 0.7s ease;
+}
+.nav-bar .nav-bar-container .nav-btn .nav-btn-slider:hover {
+  cursor: pointer;
+}
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #2b2f36;
+}
+.mainContainer .globalContainer {
+  width: 75%;
+  display: flex;
+  flex-flow: wrap row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 75px 0;
+}
+.mainContainer .globalContainer .card {
+  max-width: 27.5%;
+  height: 240px;
+  color: white;
+  position: relative;
+}
+.mainContainer .globalContainer .card .icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .globalContainer .card .icons .icons-inner {
+  background-color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .globalContainer .card .icons .icons-inner i {
+  font-size: 30px;
+  color: dodgerblue;
+}
+.mainContainer .globalContainer .card h1 {
+  font-family: "Chivo";
+  margin-top: 15px;
+  font-size: 24px;
+}
+.mainContainer .globalContainer .card p {
+  font-family: "Montserrat";
+  margin-top: 5px;
+  font-size: 15px;
+}
+.mainContainer .globalContainer .card:nth-child(4) {
+  width: 47%;
+}
+.mainContainer .globalContainer .card:nth-child(5) {
+  width: 47%;
+}
+
+.guide {
+  width: 100%;
+}
+.guide .guideContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #F6F6F6;
+}
+.guide .guideContainer img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.guide .guideContainer .guideContainerInner {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.guide .guideContainer .guideContainerInner h1 {
+  color: #353535;
+  font-family: "Montserrat";
+  font-weight: 100;
+  padding: 10px 0;
+}
+.guide .guideContainer .guideContainerInnerCells {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 40px 0;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards {
+  width: 45%;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards i {
+  font-size: 40px;
+  color: #353535;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards h2 {
+  color: #353535;
+  font-family: "Chivo";
+  font-weight: 100;
+  padding: 10px 0;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards p {
+  color: #353535;
+  font-family: "Montserrat";
+  font-weight: 100;
+  padding: 10px 0;
+  margin-top: -5px;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards button {
+  border: none;
+  background: dodgerblue;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-top: 5px;
+  transition-duration: 0.7s;
+  border: 2px solid transparent;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards button:hover {
+  background: #F6F6F6;
+  cursor: pointer;
+  color: #353535;
+  transition-duration: 0.7s;
+  border: 2px solid #353535;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards a {
+  margin-top: 15px;
+  color: black;
+  font-family: "Chivo";
+  transition-duration: 0.5s;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards a:hover {
+  color: dodgerblue;
+  transition-duration: 0.5s;
+}
+.guide .guideContainer .guideContainerInnerCells .guideContainerInnerCards #invisible {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
