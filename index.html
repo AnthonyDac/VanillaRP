@@ -10,22 +10,22 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/fe0dc174bc.js" crossorigin="anonymous"></script>
     <title>ValhallaRP - Accueil</title>
 </head>
 <body>
     <main>
         <section class="demo">
-            <img src="public/img/sa-mp-015.png">
+            <img src="public/img/sa-mp-028.png">
             <div class="demo-inner">
                 <h1>Vanilla Roleplay</h1>
                 <p>Serveur Roleplay SA:MP</p>
             </div>
             <div class="demo-inner2">
-                <a>Se connecter</a>
-                <a>S'inscrire</a>
+                <a><i class="fas fa-sign-in-alt"></i> Se connecter</a>
+                <a><i class="fas fa-user-edit"></i> S'inscrire</a>
             </div>
         </section>
         <nav>
@@ -83,9 +83,13 @@
         </section>
         <section class="guide">
             <div class="guideContainer">
-                <img src="public/img/6.png">
+                <img src="public/img/sa-mp-027.png">
                 <div class="guideContainerInner">
                     <h1>Notre guide pour rejoindre le serveur</h1>
+                    <div class="ip-clipboard">
+                        <a>Adresse: </a><a id="ipadress"> 185.98.138.27:7777</a>
+                        <button id="ipbtn" onclick="copyToClipboard('#ipadress'), copied()"><i class="fas fa-copy"></i> Copier</button>
+                    </div>
                 </div>
                 <div class="guideContainerInnerCells">
                     <div class="guideContainerInnerCards">
@@ -95,12 +99,12 @@
                         <button>Ouvrir</button>
                         <br>
                         <br>
-                        <a href="">(Télécharger les packages du serveur)</a> 
+                        <a download href="cleo.asi">(Télécharger les packages du serveur)</a> 
                     </div>
                     <div class="guideContainerInnerCards">
                         <i class="fab fa-leanpub"></i>
                         <h2>Apprendre le RP</h2>
-                        <p>Un guide entier sur chaque partie que le RP implique.</p>
+                        <p>Un guide entier sur chaque partie dont vous aurez besoin pour pratiquer le RP.</p>
                         <button>Ouvrir</button>
                         <br>
                         <br>
@@ -124,5 +128,8 @@ function copyToClipboard(element) {
   document.execCommand("copy");
   $temp.remove();
 }
+ function copied() {
+    document.getElementById("ipbtn").classList.add('button-clicked');
+ }
 </script>
 </html>
