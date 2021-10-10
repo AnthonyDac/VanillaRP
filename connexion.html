@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fe0dc174bc.js" crossorigin="anonymous"></script>
+    <title>Vanilla RP - Connexion</title>
+</head>
+<body>
+    <main>
+        <section class="demoConnexion">
+            <img src="public/img/sa-mp-028.png">
+            <div class="demo-inner2">
+                <a><i class="fas fa-home"></i> Accueil</a>
+                <a><i class="fas fa-user-edit"></i> S'inscrire</a>
+            </div>
+        </section>
+        <section class="loginForm">
+            <div class="loginFormContainer">
+                <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+                    <h1><i class="fas fa-user"></i> Se connecter</h1>
+                    <p>Vous connecter vous permet d'accéder à la gestion de vos personnages</p>
+                    <br>
+                    <p>Nom d'utilisateur :</p>
+                    <input class="textBar" id="user" type="text">
+                    <br>
+                    <p>Mot de passe :</p>
+                    <input class="textBar" id="pass" type="password">
+                    <br>
+                    <button onclick="validation()"><i class="fas fa-check"></i> Valider</button>
+                </form> 
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="containerFooter">
+            
+        </div>
+    </footer>
+</body>
+<script>
+    function validation()  
+            {  
+                var id=document.getElementById("user").value;  
+                var ps=document.getElementById("pass").value;
+                if(id.length=="" && ps.length=="") {  
+                    alert("Merci de renseigner un nom d'utilisateur et un mot de passe!");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("Merci de renseigner un nom d'utilisateur.");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Merci de renseigner un mot de passe.");  
+                    return false;  
+                    }  
+                }                             
+            }  
+</script>
+</html>
