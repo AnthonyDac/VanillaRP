@@ -1,5 +1,5 @@
 <?php      
-    $host = "vps82340.serveur-vps.net";  
+    $host = "vps82340.serveur-vps.net:3306";  
     $user = "serveuragain";  
     $password = 'motdepasse';  
     $db_name = "VanillaRP";  
